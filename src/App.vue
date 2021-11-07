@@ -3,9 +3,10 @@
     <HeaderBar/>
   </div>
   <div id="menu">
-    <MenuBar />
+    <MenuBar/>
   </div>
   <div id="content">
+    <div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </div>
 </template>
 
@@ -32,20 +33,20 @@ export default {
     "menu content";
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-#menu{
+#menu {
   grid-area: menu;
 }
 
-#header{
+#header {
   grid-area: header;
 }
 
-#content{
+#content {
   grid-area: content;
 }
 </style>
