@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-#background{
+#background {
   min-width: 200px;
   height: 100%;
   position: fixed;
