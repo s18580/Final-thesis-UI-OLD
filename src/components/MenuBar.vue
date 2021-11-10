@@ -1,73 +1,81 @@
 
 <template>
     <div id="background">
-      <ul>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Strona główna - Admin
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Zarządzanie kontami
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Stałe programowe
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Kopie zapasowe
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Strona główna - Pracownik
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Zamówienia
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Klienci
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Dostawcy
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Wyceny
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Pracownicy
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Statystyki
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Wyszukaj osobę kontaktową
-          </div>
-        </li>
-        <li>
-          <div v-if="hasRole()" class="menuLink">
-            Strona główna - Księgowa
-          </div>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li v-if="hasRole()">
+            <router-link :to="{name: 'Home'}" exact>
+              <div class="menuLink">
+                Strona główna - Admin
+              </div>
+            </router-link>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Zarządzanie kontami
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Stałe programowe
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Kopie zapasowe
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <router-link :to="{name: 'Home'}" exact>
+              <div class="menuLink">
+                Strona główna - Pracownik
+              </div>
+            </router-link>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Zamówienia
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Klienci
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Dostawcy
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Wyceny
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Pracownicy
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Statystyki
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <div class="menuLink">
+              Wyszukaj osobę kontaktową
+            </div>
+          </li>
+          <li v-if="hasRole()">
+            <router-link :to="{name: 'Home'}" exact>
+              <div class="menuLink">
+                Strona główna - Księgowa
+              </div>
+            </router-link>
+          </li>
+        </ul>
+      </nav>
     </div>
 </template>
 
